@@ -1,7 +1,7 @@
 const { Pool } = require('pg');
 
 const connectionString =
-  'postgres://bgqbsnym:gfZpzt8pVEbh81tHe4UEfakxqoOVgpWl@ruby.db.elephantsql.com/bgqbsnym';
+  'postgres://harunhurtic:IxVcQPJNkTRRTu7jVaCPhEDF2SgldEUs@dpg-cg9h2nm4dad5p6qvu7ng-a.oregon-postgres.render.com/notilfy?ssl=true';
 
 const pool = new Pool({ connectionString: connectionString });
 
