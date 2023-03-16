@@ -4,6 +4,7 @@ const cors = require('cors');
 const notesRoutes = require('./routes/notes');
 const userRoutes = require('./routes/users');
 const checkAuth = require('./middlewares/checkAuth');
+require('./config/db');
 
 //inti app
 const app = express();

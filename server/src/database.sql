@@ -1,7 +1,7 @@
 CREATE DATABASE notes_db;
 
 -- Create a table for users
-CREATE TABLE users (
+CREATE TABLE IF NOT EXISTS users (
   id SERIAL PRIMARY KEY,
   email VARCHAR(50) UNIQUE,
   password VARCHAR(999),
@@ -9,7 +9,7 @@ CREATE TABLE users (
 );
 
 --Create a table for notes
-CREATE TABLE notes (
+CREATE TABLE IF NOT EXISTS notes (
    id SERIAL PRIMARY KEY, 
    user_id INTEGER REFERENCES users(id) ON DELETE CASCADE, 
    description VARCHAR(255),
